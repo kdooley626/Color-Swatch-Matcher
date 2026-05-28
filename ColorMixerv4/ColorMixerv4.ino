@@ -49,10 +49,7 @@ const int NUM_PUMPS = sizeof(pumps) / sizeof(pumps[0]);
 
 
 void setup() {
-  int buttonStateAP = 0;
-  int buttonStateSC = 0;
-  
-
+ 
   Serial.begin(9600);
  
 
@@ -159,15 +156,7 @@ void makePrimary(const Pump& pump, float mass) {
   Serial.print("Dispensed "); Serial.print(mass, 1); Serial.print(" grams of "); Serial.println(pump.name);
   Serial.print("Dispense time: "); Serial.print(delayTime); Serial.println("ms");
 }
-void makeSecondary(const Pump& pump1, const Pump& pump2, float t, float ratio) {
-  if (ratio>=0.0 && ratio <= 1.0) {
-    float pump1_time = ratio * t; // Calculation for total pump run time for primary color 1
-    float pump2_time = (1-ratio) * t; // Calculation for total pump run time for primary color 2
-    makePrimary(pump1, pump1_time);
-    makePrimary(pump2, pump2_time);
 
-  }
-}
 
 
 
