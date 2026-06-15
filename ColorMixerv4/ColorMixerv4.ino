@@ -32,7 +32,7 @@ struct Recipe {
 };
 
 // Define pump rates
-float red_rate = 1.571;
+float red_rate = 1.612;
 float blue_rate = 1.532;
 float yellow_rate = 1.462;
 

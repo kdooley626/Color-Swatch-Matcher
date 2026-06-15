@@ -4,9 +4,9 @@ import serial
 import time
 
 # Define matrix that determines RGB value based on on RYB ratio vector
-RYB_to_RGB = np.array([[.4995, .4821, .4256],
-                       [.3085, .3366, .347],
-                       [.2294, .2141, .2598]])
+RYB_to_RGB = np.array([[.4957, .4753, .4401],
+                       [.3124, .3331, .3409],
+                       [.2305, .2255, .2535]])
 
 
 # HELPER FUNCTIONS ###########################################################################################################
@@ -47,7 +47,7 @@ class Board:
         print(f"{self.name} connected")
 
     def disconnect(self):
-        if self.Serial is not None and self.serial.is_open:
+        if self.serial is not None and self.serial.is_open:
             self.serial.close()
             print(f"{self.name} disconnected.")
 
@@ -138,8 +138,8 @@ class PumpBoard(Board):
 
 
 # Initialize board objects for sensor board and pump board
-pumps = PumpBoard("pumps", "/dev/cu.usbmodem111401", 20.0)
-sensor = SensorBoard("sensor", "/dev/cu.usbmodem111301" )
+pumps = PumpBoard("pumps", "/dev/cu.usbmodem11401", 20.0)
+sensor = SensorBoard("sensor", "/dev/cu.usbmodem11301" )
 
 time.sleep(2)
 
@@ -178,7 +178,7 @@ def cmd_printReading():
     sensor.print_reading()
 
 def cmd_duplicate():
-    raw = input("Enter quantity to duplicate in grams")
+    raw = input("Enter quantity to duplicate in grams: ")
     try:
         mass = float(raw)
     except ValueError:
