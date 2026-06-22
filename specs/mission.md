@@ -59,4 +59,4 @@ and attempt to replicate any color sample as close as possible.
 - **Small, verifiable steps.** Changes are made in small increments that can be
   tested on the bench before moving on (see `roadmap.md`).
 
-Note: This mission structure was generated with the assistance of AI and refined by the developer to match project goals
+Note: This mission file was generated with the assistance of AI and refined by the developer to match project goals

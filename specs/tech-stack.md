@@ -128,4 +128,4 @@ Color-Swatch-Matcher/
 - Serial ports are hard-coded rather than configurable.
 - Calibration constants live inline in source
 
-Note: This tech-stack structure was formatted with the assistance of AI
+Note: This tech-stack file was generated with the assistance of AI (based on inputs such as codes and project summaries written by author)
