@@ -59,11 +59,11 @@ robot.
   last sample (the orange).
 - The duplicating algorithm is based on the **least-squares** method, so the robot
   attempts to make any color as close as possible with the available ingredients.
-  - *Future tests:* attempt to replicate colors that cannot be generated from the
+  - _Future tests:_ attempt to replicate colors that cannot be generated from the
     available ingredients and see how close the match is.
 - The control system is **open loop** because of the nature of the samples — colors
   are applied to paper and must dry before they can be read by the sensor.
-  - *Future iterations* could analyze colors while in liquid form to enable a closed
+  - _Future iterations_ could analyze colors while in liquid form to enable a closed
     loop control system.
 
 ## Usage
@@ -103,5 +103,10 @@ Color-Swatch-Matcher/
 └── specs/                        # Project constitution (mission, tech-stack, roadmap)
 ```
 
-See the [`specs/`](specs/) directory for the project mission, tech stack, and
-development roadmap.
+See the [`specs/`](specs/) directory for the project mission and tech stack.
+
+## AI Disclosure:
+
+This project was developed with assistance from ChatGPT. ChatGPT was used during development as a programming assistant and technical reference. It was primarily used to learn unfamiliar programming concepts, troubleshoot implementation issues, and discuss possible software approaches. It was also used to learn about different color reading sensors.
+
+The overall system design, software architecture, hardware construction, calibration methodology, testing, and final implementation decisions were completed by the author. Any AI-generated code or suggestions were reviewed, modified as needed, and incorporated only after their operation was fully understood.
